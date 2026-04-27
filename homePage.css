@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Google sans, Arial;
+}
+
+/*
+Colors 
+Light -> Dark Blue
+BCD2E8
+91BAD6
+73A5C6
+528AAE
+2E5984
+1E3F66
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #BCD2E8;
+    display: flex;          
+    flex-direction: column; 
+    min-height: 100vh;      
+}
+
+.header {
+    background-color: #91BAD6;
+    border-bottom: 3px solid;
+    border-color: #1E3F66;
+}
+
+.headTable {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer {
+    background-color: rgb(202, 205, 207);
+    border-top: 5px solid;
+    border-color: #1E3F66;
+    margin-top: auto;      
+}
+
+.footerTable {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+table a {
+    color: #2E5984;
+}
+
+table a:hover {
+    color: rgb(115, 115, 212);
+}
+
+.currentPage {
+    color: #000080;
+}
+
+.tableTitle {
+    margin-right: 0;
+    padding-right: 690px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.tableLink {
+    padding-left: 25px;
+}
+
+.current {
+    margin-top: 125px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #003366;
+}
+
+.mainStuff {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.button1 {
+    margin-left: 0;
+    background-color: #91BAD6;
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 999px;
+    border: none;
+    display: inline-block;
+}
+
+.button2 {
+    margin-left: 0;
+    background-color: #73A5C6;
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 999px;
+    border: none;
+    display: inline-block;
+}
+
+.writings {
+    margin-left: 2.5%;
+    margin-top: 10px;
+}
+
+.square-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: #2E5984;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.square-button:hover {
+    transform: translateY(-2px);
+    color: white;
+    background-color: #91BAD6;
+}
+
+.curved-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 100px;
+    background-color: #91BAD6;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
