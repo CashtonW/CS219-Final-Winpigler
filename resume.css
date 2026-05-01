@@ -1,0 +1,122 @@
+:root {
+  --color-light-blue: #BCD2E8;
+  --color-med-light: #91BAD6;
+  --color-medium: #73A5C6;
+  --color-med-dark: #528AAE;
+  --color-dark-blue: #2E5984;
+  --color-navy: #1E3F66;
+  
+  --color-active-nav: #000080;
+  --color-hover-link: rgb(115, 115, 212);
+  --color-footer-bg: rgb(202, 205, 207);
+  --color-white: #ffffff;
+  --color-text-gray: rgb(68, 66, 66);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--color-light-blue);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header & Navigation */
+.header {
+  background-color: var(--color-med-light);
+  border-bottom: 3px solid var(--color-navy);
+}
+
+.headTable {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.tableTitle {
+  padding-left: 20px;
+  text-align: left;
+  width: 40%; 
+}
+
+.tableLink {
+  padding-left: 25px;
+}
+
+.currentPage {
+  color: var(--color-active-nav);
+  font-weight: bold;
+}
+
+/* Main Content Layout */
+.mainText {
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 10px;
+}
+
+h1 {
+  margin-top: 20px;
+  color: var(--color-navy);
+}
+
+h3 {
+  margin-top: 15px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Resume Specific Elements */
+.download-button {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white) !important;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.download-button:hover {
+  background-color: var(--color-navy);
+}
+
+img {
+  border-radius: 4px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: var(--color-footer-bg);
+  border-top: 5px solid var(--color-navy);
+  margin-top: auto;
+}
+
+.footerTable {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+/* Link Behaviors */
+a {
+  text-decoration: none;
+  color: var(--color-dark-blue);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--color-hover-link);
+}
