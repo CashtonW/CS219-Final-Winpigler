@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="header">
+        <table class="headTable">
+            <thead>
+                <tr>
+                    <th class="tableTitle">Academic Portfolio</th>
+                    <th class="tableLink"><a href="index.html">Home</a></th>
+                    <th class="tableLink"><a href="blog.html">Blog</a></th>
+                    <th class="tableLink"><a href="about.html">About</a></th>
+                    <th class="tableLink"><a href="resume.html">Resume</a></th>
+                    <th class="tableLink"><a href="contact.html" class="currentPage">Contact</a></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <br><br>
+
+    <!-- Top Section: Contact Info and Form -->
+    <table style="width:100%; border-spacing: 20px; table-layout: fixed;">
+        <tr>
+            <!-- Left Side: Info Panel -->
+            <td style="width:35%; vertical-align: top;">
+                <div class="writings">
+                    <h1>Contact Me</h1>
+                    <p>Feel free to contact me for any reason.</p>
+                    <br>
+                    <h3>Direct Contact:</h3>
+                    <p>Cashton.W@Outlook.com</p>
+                    <p>240-578-0162</p>
+                    <br>
+                    <h3>Professional Connections:</h3>
+                    <a href="https://www.linkedin.com/in/cashton-winpigler/" class="square-button1" target="_blank">LinkedIn</a>
+                    <br><br>
+                    <a href="https://github.com/CashtonW" class="square-button2" target="_blank">GitHub</a>
+                </div>
+            </td>
+
+            <!-- Right Side: Updated Contact Form -->
+            <td style="width:65%; vertical-align: top; background-color: #f9f9f9; padding: 25px; border-radius: 8px;">
+                <h2>Send a Message</h2>
+                <form action="#" method="post" style="display: flex; flex-direction: column; gap: 15px;">
+                    <div style="display: flex; gap: 10px;">
+                        <input type="text" name="name" placeholder="Name" style="flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 4px;" required>
+                        <input type="email" name="email" placeholder="Email" style="flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 4px;" required>
+                    </div>
+
+                    <!-- New Inquiry Type Dropdown -->
+                    <label for="inquiry-type" style="font-weight: bold; font-size: 0.9rem;">Reason for Inquiry:</label>
+                    <select name="inquiry-type" id="inquiry-type" style="padding: 12px; border: 1px solid #ccc; border-radius: 4px; background: white;">
+                        <option value="general">General Question</option>
+                        <option value="tutoring">Tutoring Request</option>
+                        <option value="project">Project Collaboration</option>
+                        <option value="internship">Career/Internship Opportunity</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <textarea name="message" placeholder="Your Message" rows="6" style="padding: 12px; border: 1px solid #ccc; border-radius: 4px; resize: none;" required></textarea>
+                    
+                    <button type="submit" style="padding: 12px; background-color: #91BAD6; border: none; cursor: pointer; font-weight: bold; border-radius: 4px;">Submit Message</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Bottom Section: Full-Width Location -->
+    <div style="margin: 40px 20px; background-color:#91BAD6; padding: 30px; border-radius: 8px; display: flex; align-items: center; gap: 30px;">
+        <div style="flex: 1;">
+            <img src="images/FrederickMDPic.jpg" alt="Aerial view of Frederick, Maryland" style="width:100%; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+        <div style="flex: 1.5;">
+            <h2>My Location</h2>
+            <p style="font-size: 1rem; line-height: 1.6;">
+                Frederick, Maryland, is a vibrant city located about an hour’s drive from both Washington, D.C., and Baltimore. 
+                Known for its perfectly preserved 18th and 19th century architecture, the area serves as a scenic gateway between 
+                the bustling metropolitan centers to the south and the rolling hills of the Catoctin Mountains to the north.
+                It is the second-largest city in the state, offering a unique blend of colonial history and modern biotech industries.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <table class="footerTable">
+            <thead>
+                <tr>
+                    <th class="tableTitle">Academic Portfolio</th>
+                    <th class="tableLink"><a href="https://www.linkedin.com/in/cashton-winpigler/">LinkedIn</a></th>
+                    <th class="tableLink"><a href="https://www.hood.edu/">Hood College</a></th>
+                </tr>
+                <tr>
+                    <th class="tableTitle">Cashton.W@Outlook.com</th>
+                    <th class="tableLink"><a href="https://github.com/CashtonW">GitHub</a></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>

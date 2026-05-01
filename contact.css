@@ -1,0 +1,141 @@
+:root {
+  /* Color Palette */
+  --color-light-blue: #BCD2E8;
+  --color-med-light: #91BAD6;
+  --color-medium: #73A5C6;
+  --color-med-dark: #528AAE;
+  --color-dark-blue: #2E5984;
+  --color-navy: #1E3F66;
+  
+  /* Additional UI Colors */
+  --color-footer-bg: rgb(202, 205, 207);
+  --color-white: #ffffff;
+  --color-hover-link: rgb(115, 115, 212);
+  --color-active-link: #000080;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans", Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-light-blue);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+  background-color: var(--color-med-light);
+  border-bottom: 3px solid var(--color-navy);
+}
+
+.headTable {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: var(--color-footer-bg);
+  border-top: 5px solid var(--color-navy);
+  margin-top: auto;
+}
+
+.footerTable {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+/* Navigation & Links */
+table a {
+  color: var(--color-dark-blue);
+}
+
+table a:hover {
+  color: var(--color-hover-link);
+}
+
+.currentPage {
+  color: var(--color-active-link);
+}
+
+.tableTitle {
+  padding-right: 690px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.tableLink {
+  padding-left: 25px;
+}
+
+/* Layout Containers */
+.mainText {
+  margin-left: 2.5%;
+  margin-top: 10px;
+}
+
+.writings {
+  margin-left: 2.5%;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* Button Styling */
+.square-button1, .square-button2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 75px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: none !important;
+}
+
+.square-button1 {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white) !important;
+}
+
+.square-button2 {
+  background-color: var(--color-med-light);
+  color: var(--color-white);
+}
+
+.square-button1:hover {
+  background-color: var(--color-med-light);
+  transform: translateY(-2px);
+  color: var(--color-white);
+}
+
+.square-button2:hover {
+  background-color: var(--color-dark-blue);
+  transform: translateY(-2px);
+  color: var(--color-white);
+}
+
+/* General Elements */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  float: left;
+  margin: 10px 20px;
+  width: 535px;
+  height: 300px;
+  border-radius: 4px;
+}
