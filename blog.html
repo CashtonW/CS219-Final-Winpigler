@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Cashton Winpigler</title>
+    <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="blog-style.css">
+</head>
+<body>
+    <div class="header">
+        <table class="headTable">
+            <thead>
+                <tr>
+                    <th class="tableTitle">Academic Portfolio</th>
+                    <th class="tableLink"><a href="index.html">Home</a></th>
+                    <th class="tableLink"><a href="blog.html" class="currentPage">Blog</a></th>
+                    <th class="tableLink"><a href="about.html">About</a></th>
+                    <th class="tableLink"><a href="resume.html">Resume</a></th>
+                    <th class="tableLink"><a href="contact.html">Contact</a></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <main class="mainText">
+        <section class="blog-controls">
+            <input type="text" id="blogSearch" placeholder="Search posts..." onkeyup="filterPosts()">
+            <div class="filter-pills" id="filterContainer">
+                <button class="pill active" onclick="filterCategory('all')">All</button>
+                <button class="pill" onclick="filterCategory('tech')">Technology</button>
+                <button class="pill" onclick="filterCategory('math')">Mathematics</button>
+                <button class="pill" onclick="filterCategory('ethics')">Ethics</button>
+            </div>
+        </section>
+<br>
+        <section class="featured-post">
+            <div class="featured-content">
+                <span class="label">Featured</span>
+                <h1>Miniaturization of computer technology</h1>
+                <p>The miniaturization of technology over the years...</p>
+                <a href="CSIT203Miniature-Post.html" class="button1">Read More</a>
+            </div>
+        </section>
+<br>
+        <section class="post-grid" id="postGrid">
+            <article class="post-card" data-category="tech">
+                <div class="card-image" style="background-color: var(--color-med-dark);"></div>
+                <h3>Ignoring Warnings in CSIT 203</h3>
+                <p>A deep dive into common debugging oversights...</p>
+                <a href="CSIT203HW3-Post.html">Read Story →</a>
+            </article>
+<br>
+            <article class="post-card" data-category="ethics">
+                <div class="card-image" style="background-color: var(--color-medium);"></div>
+                <h3>US Legislation & Privacy</h3>
+                <p>Analyzing restrictions on information collection...</p>
+                <a href="CSIT203HW2-Post.html">Read Story →</a>
+            </article>
+<br>
+            <article class="post-card" data-category="math">
+                <div class="card-image" style="background-color: var(--color-navy);"></div>
+                <h3>Miniaturization of computer technology</h3>
+                <p>The miniaturization of technology over the years...</p>
+                <a href="CSIT203Miniature-Post.html">Read Story →</a>
+            </article>
+        </section>
+<br><br>
+        <div class="pagination">
+            <a href="blankPage.html" class="page-link">Previous</a>
+            <a href="blankPage.html" class="page-link active">1</a>
+            <a href="blankPage.html" class="page-link">2</a>
+            <a href="blankPage.html" class="page-link">Next</a>
+        </div>
+    </main>
+
+    <div class="footer">
+        <table class="footerTable">
+            <thead>
+                <tr>
+                    <th class="tableTitle">Academic Portfolio</th>
+                    <th class="tableLink"><a href="https://www.linkedin.com/in/cashton-winpigler/">LinkedIn</a></th>
+                    <th class="tableLink"><a href="https://www.hood.edu/">Hood College</a></th>
+                </tr>
+                <tr>
+                    <th class="tableTitle">Cashton.W@Outlook.com</th>
+                    <th class="tableLink"><a href="https://github.com/CashtonW">GitHub</a></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <script src="blog-logic.js"></script>
+</body>
+</html>
