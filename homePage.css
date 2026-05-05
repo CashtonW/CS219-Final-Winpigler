@@ -66,7 +66,6 @@ table a:hover {
   color: var(--color-hover-link);
 }
 
-/* Main Content Layout */
 .current {
   margin-top: 125px;
   margin-bottom: 10px;
@@ -80,7 +79,6 @@ table a:hover {
   margin-right: 25%;
 }
 
-/* Buttons */
 .button-group {
   display: flex;
   justify-content: center;
@@ -107,7 +105,6 @@ table a:hover {
   display: inline-block;
 }
 
-/* Writings Section */
 .writings {
   margin-left: 2.5%;
   margin-top: 10px;
